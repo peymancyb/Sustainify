@@ -14,6 +14,7 @@ import { Home } from "../screens"
 import { COLORS, FONTS, icons } from "../constants"
 import { Scanner } from "../barcode-scanner";
 import { AnalitycsScreen } from "../screens/Analitycs";
+import { SettingsScreen } from "../screens/SettingsScreen";
 
 const Tab = createBottomTabNavigator()
 
@@ -166,7 +167,7 @@ const Tabs = () => {
             />
             <Tab.Screen
                 name="Settings"
-                component={Home}
+                component={SettingsScreen}
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <View style={{ alignItems: 'center', justifyContent: 'center'}}>
