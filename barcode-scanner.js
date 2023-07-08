@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Text, View, StyleSheet, Button } from 'react-native';
+import { Text, View, StyleSheet } from 'react-native';
+import { Button } from 'native-base'
 import { BarCodeScanner } from 'expo-barcode-scanner';
 
 const styles = StyleSheet.create({
@@ -25,7 +26,7 @@ export function Scanner() {
 
   const handleBarCodeScanned = ({ type, data }) => {
     setScanned(true);
-    alert(`Bar code with type ${type} and data ${data} has been scanned!`);
+    alert(`You have earn 60 points!`);
   };
 
   function openCamera() {
